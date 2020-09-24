@@ -1,0 +1,20 @@
+$box-sizing: border-box;
+* {
+  box-sizing: $box-sizing;
+}
+.flex-container {
+  display: flex;
+}
+.object-fit {
+  object-fit: cover;
+}
+@mixin animation($name, $dur: 1s, $time-func: linear, $del: 0s, $ic, $dir: normal) {
+  animation: {
+    name: $name;
+    duration: $dur;
+    timing-function: $time-func;
+    delay: $del;
+    iteration-count: $ic;
+    direction: $dir;
+  }
+}
